@@ -20,6 +20,6 @@ case class MatchDetails(
                          umpire2:String
                        )
 
-  object MatchData {
+  object MatchDetails {
     implicit val formatter: OFormat[MatchDetails] = Json.format[MatchDetails]
 }

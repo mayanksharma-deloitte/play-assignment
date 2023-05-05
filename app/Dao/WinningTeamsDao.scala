@@ -16,7 +16,7 @@ class WinningTeamsDao @Inject()(protected val dbConfigProvider: DatabaseConfigPr
 
   class TeamsWinTable(tag: Tag) extends Table[winningTeams](tag, "Teams_Win") {
     def id: Rep[Option[Int]] = column[Int]("id", O.PrimaryKey,O.AutoInc)
-    def teamname: Rep[String] = column[String]("teamName")
+    def teamname: Rep[String] = column[String]("Team")
     def wins:Rep[Int]=column[Int]("Wins")
 
     override def * : ProvenShape[winningTeams] = (id,teamname,wins) <> ((winningTeams.apply _).tupled, winningTeams.unapply)

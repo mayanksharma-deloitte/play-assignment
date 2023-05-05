@@ -5,7 +5,7 @@ import akka.actor.Actor
 import akka.stream.ActorMaterializer
 import akka.stream.scaladsl.{Sink, Source}
 import com.typesafe.config.ConfigFactory
-import models.{MatchData, MatchDetails, Team, Venue}
+import models.{MatchDetails, Team, Venue}
 
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter

@@ -2,7 +2,7 @@ package modules
 
 import Dao.{MatchDetailsDao, TeamDao, VenueDao, WinningTeamsDao}
 import akka.actor.{Actor, ActorSystem, PoisonPill, Props, Terminated}
-import models.{MatchData, MatchDetails, winningTeams}
+import models.{MatchDetails, winningTeams}
 import modules.actor.ReaderActor
 
 import javax.inject.{Inject, Singleton}

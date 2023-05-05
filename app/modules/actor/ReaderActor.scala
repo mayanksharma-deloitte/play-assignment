@@ -5,7 +5,6 @@ import akka.actor.Actor.Receive
 import akka.actor.TypedActor.context
 import akka.actor.{Actor, ActorRef, Props, Terminated}
 import akka.routing.RoundRobinPool
-import models.{MatchData}
 import modules.actor.ChildActor.ChildActor
 import play.api.db.slick.{DatabaseConfigProvider, HasDatabaseConfigProvider}
 import play.api.mvc.DefaultControllerComponents
